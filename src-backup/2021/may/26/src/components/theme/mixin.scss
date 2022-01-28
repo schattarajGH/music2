@@ -1,0 +1,9 @@
+@mixin before($t:0,$l:0,$w:2px,$h:100px,$bg:#fff){
+  position: absolute;
+  top:$t;
+  left:$l;
+  content:"";
+  width: $w;
+  height: $h;
+  background-color: $bg;
+}

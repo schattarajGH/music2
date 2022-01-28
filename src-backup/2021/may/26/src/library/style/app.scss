@@ -1,0 +1,533 @@
+//Please import All plugins in plugins.scss file
+@import "./plugins";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+#banner{
+  position: relative;
+  background-attachment: fixed;
+  background-image: url(../../assets/images/joshua-fuller-368384-unsplash.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  &:before{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    opacity: 0.3;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .text{
+    position: relative;
+    margin-top: 250px;
+    text-align: center;
+    color:$text;
+  h2{
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color:$text;
+    font-family:  "Monoton",Sans-serif;
+    margin-bottom: 16px;
+  }
+p{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 24px;
+
+}
+.btn{
+  &:hover{
+    background-color: #000;
+    color:#fff;
+    border-color: #000;
+    transform: translateY(-8px);
+  }
+}
+}
+}
+.section1{
+  padding: 100px 0;
+  background-color: #000;
+  .image{
+    text-align: right;
+    position: relative;
+    .img{
+      position: relative;
+      &::before{
+        position: absolute;
+        top:0;
+        width: 60%;
+        height: 100%;
+        content:"";
+        right:0;
+        background-color: rgb(31, 30, 30);
+        z-index: 1;
+        opacity: 0.3;
+      }
+    }
+img{
+  width: 60%;
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+ 
+}
+  }
+  .text{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color:$text;
+    left:200px;
+    text-align: left;
+    font-weight: bold;
+    z-index: 2;
+.btn{
+  padding: 10px 30px;
+  background-color:#ff2d55;
+  color:#fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-color:#ff2d55;
+  &:hover{
+    transform: translateY(-8px);
+  }
+}
+    h2{
+      font-size: 100px;
+      text-transform: uppercase;
+    }
+    p{
+      max-width: 400px;
+      margin-bottom: 24px;
+    }
+  }
+}
+.section2{
+  padding: 100px 0;
+  background-color: #000;
+  .image{
+    text-align: right;
+    position: relative;
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+  }
+  .text{
+   color:$text;
+   text-align: right;
+    h2{
+      font-size: 45px;
+      text-transform: uppercase;
+      text-transform: inherit;
+    }
+    p{
+      font-weight: bold;
+      margin:24px 0 24px;
+    }
+    img{
+      margin-top: 24px;
+      width:200px;
+    }
+  }
+}
+.section3{
+  background-image: url(../../assets/images/efe-kurnaz-315384-unsplash.jpg);
+  padding: 100px 0;
+  color:$text;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  &:before{
+    @include before($t:0,$l:0,$w:100%,$h:100%,$bg:#000);
+    opacity: 0.3;
+  }
+  h5{
+font-weight: bold;
+text-align: center;
+position: relative;
+margin-top: 100px;
+font-size: 15px;
+&:before{
+  @include before($t:-110px,$l:50%,$w:1px,$h:80px,$bg:#fff);
+}
+  }
+  h3{
+    text-align: center;
+    font-weight: bold;
+   position: relative;
+   text-transform: uppercase;
+   font-size: 60px;
+  }
+  .row{margin-top: 60px;}
+  .image{
+  position: relative;
+padding: 40px;
+    img{
+      width: 100%;
+    }
+  }
+  .text{
+    position: relative;
+    h3{
+      font-size: 45px;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    h4{
+      font-size: 16px;
+      color:rgb(212, 209, 209);
+    }
+  }
+}
+.section4{
+  
+  
+  h5{
+font-weight: bold;
+text-align: center;
+position: relative;
+margin-top: 100px;
+font-size: 15px;
+&:before{
+  @include before($t:-110px,$l:50%,$w:1px,$h:80px,$bg:#000);
+}
+  }
+  h3{
+    text-align: center;
+    font-weight: bold;
+   position: relative;
+   text-transform: uppercase;
+   font-size: 60px;
+  }
+  .row{margin-top: 60px;align-items: center;}
+  .padding{
+    padding: 40px;
+  }
+  .filter{
+    .image{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    padding: 40px;
+    background-image: url(../../assets/images/joshua-fuller-368384-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      filter:blur(8px);
+      &:before{
+        @include before($t:0,$l:0,$w:100%,$h:100%,$bg:#000);
+        opacity: 0.3;
+      }
+      }
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    .front{
+      position: relative;
+      text-align: center;
+      padding: 100px 40px;
+      color: $text;
+      text-transform: capitalize;
+      .controls{
+        margin-top: 16px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        a{
+          color:$text;
+        font-size: 30px;  
+        transition: all 0.3s;
+        
+        &:hover{
+          transform: scale(1.2);
+        }
+        }
+      }
+      #seek-bar{
+        
+        position: relative;
+        width: 90%;
+    height: 2px;
+    background-color: gray;
+    display: flex;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 24px auto 0;
+  input{
+    width: 100%;
+    -webkit-appearance: none;
+&::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: $text;
+  cursor: pointer;
+  border-radius: 50%;
+}
+  }  
+  }
+  .time{
+    padding:10px 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+    }
+    img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+  
+  
+}
+  .text{
+   
+    h3{
+      font-size: 45px;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    p{
+      font-weight: 600;
+      margin: 24px 0;
+      text-align: left;
+    }
+    .btn{
+      color:#000;
+      border-color: #000;
+      padding: 15px 45px;
+      font-size: 16px;
+      &:hover{
+        background-color: #000;
+        color: $text;
+      }
+    }
+    h4{
+      margin-top: 32px;
+      font-weight: bold;
+    }
+    a{
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color:#000;
+      font-weight: bold;
+    }
+    .row{
+      margin-top:16px;
+    }
+    position: relative;
+  }
+  .tracklist{
+    padding: 60px 200px;
+    position: relative;
+    &:before{
+      @include before($t:auto,$l:50%,$w:65%,$h:1px,$bg:#000);
+      bottom:-24px;
+      transform: translateX(-50%)
+    }
+    h4{
+      text-align: center;
+      font-weight: bold;
+      font-size: 32px;
+      position: relative;
+      margin-bottom: 70px;
+      &:before{
+        @include before($t:70px,$l:0,$w:100%,$h:1px,$bg:#000);
+      }
+    }
+    .list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      .link{
+        display: flex;
+        align-items: center;
+        a{
+          margin-right: 50px;
+          color: #000;
+          font-size: 24px;
+          transition: all 0.3s;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  h6{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+  }
+p{
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+  padding: 100px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width:1199px) {
+#banner{
+  .text{
+    margin-top: 150px;
+  }
+}
+}
+@media (max-width:991px) {
+  #banner{
+    .text{
+      h2{
+        font-size: 80px;
+      }
+    }
+  }
+  .section1{
+    .image{
+      .img{
+        &:before{
+          width: 80%;
+        }
+      }
+      img{width: 80%;}}
+    .text{
+      left:0;
+    }
+  }
+  .section4{
+    .tracklist{
+    padding:60px 50px;
+    }}
+  }
+@media (max-width:767px) {
+  #banner{
+    .text{
+      margin-top: 100px;
+      h2{
+        font-size: 60px;
+      }
+    }
+  }
+.section1{
+  .image{
+    .img{&:before{
+      width: 100%;
+    }
+    img{width: 100%;}}}
+  .text{
+    left:-10px;
+
+  h2{
+    font-size: 60px;
+  }}
+}
+.section3{
+  .image{
+    padding: 40px 0;
+  }
+}
+.section4{
+  .padding{
+  padding: 40px 0;
+}
+.text{
+  .row{
+    a{
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+}
+.tracklist{
+  padding: 60px 0;
+}
+}
+  }
+  @media (max-width:575px) {
+    #banner{
+      
+      .text{
+        margin-top: 80px;
+        h2{
+          font-size: 30px;
+        }
+      }
+    }
+  .section1{
+    .image{
+      padding: 0 10px;
+      img{width: 100%; height: auto;}}
+    .text{
+      left:-10px;
+  
+    h2{
+      font-size: 40px;
+    }}
+  }
+  .section3{
+    .image{
+      padding: 40px 0;
+    }
+  }
+  .section4{
+    .text{
+     .row{
+       a{
+         display: block;
+         margin-bottom: 16px;
+       }
+     }
+    }
+.padding{
+  padding: 40px 0;
+
+}
+.filter{
+  .front{
+    .controls{
+      padding: 0;
+    }
+    #seek-bar{
+      width: 100%;
+    }
+    .time{
+      padding: 10px 0;
+    }
+  }
+}
+    .tracklist{
+      padding: 60px 0;
+      .list{
+        .link{
+          display: block;
+          a{
+            margin-right: 0px;
+          }
+          span{
+            display: block;
+          }
+        }
+        .title{
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+    }
